@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jonas Banay | IT Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green-dark: #1F6F43;
+    --green-light: #9FD3B6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    line-height: 1.6;
+}
+
+/* ===== HEADER + NAV ===== */
+header {
+    background-color: var(--green-dark);
+    color: var(--green-light);
+    padding: 30px 6% 60px;
+    text-align: center;
+}
+
+/* NAV BUTTONS CONTAINER */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+/* NAV BUTTONS */
+.nav-container a {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    padding: 10px 18px;
+    border-radius: 999px; /* pill shape */
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.nav-container a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* HERO PROFILE PICTURE */
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--green-light);
+    margin: 18px auto 22px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* HERO TEXT */
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* ===== SECTION CARDS ===== */
+section {
+    max-width: 1100px;
+    margin: 36px auto;
+    padding: 42px 6%;
+    background-color: var(--green-dark);
+    color: var(--green-light);
+    border-radius: 18px;
+}
+
+section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    padding-left: 18px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== PROJECTS ===== */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 26px;
+    margin-top: 22px;
+}
+
+.project-card {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    padding: 26px;
+    border-radius: 14px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    color: var(--green-dark);
+    font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--green-dark);
+    color: var(--green-light);
+    text-align: center;
+    padding: 26px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 34px 5%;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 10px 0;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER WITH BUTTON NAV + PROFILE -->
+<header>
+    <nav class="nav-container">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- PROFILE PICTURE -->
+    <img src="C:\Users\Admin\Desktop\Portfolio\profile.jpg" alt="Jonas Banay" class="profile-pic">
+
+    <h1>Jonas Banay</h1>
+    <p>IT Student | Aspiring Web Developer</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an IT student passionate about web development, focused on building
+        professional, reliable, and modern web experiences.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+        <li>React</li>
+        <li>Node.js</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio using HTML, CSS, and JavaScript.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Chat Application</h3>
+            <p>Real-time chat app built with Node.js and Socket.io.</p>
+            <a href="#">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Cisco Networking Academy</li>
+        <li>Web Development Bootcamp</li>
+        <li>AWS Cloud Practitioner</li>
+    </ul>
+</section>
+
+<section id="activities">
+    <h2>Extracurricular Activities</h2>
+    <ul>
+        <li>Coding Club Member</li>
+        <li>IT Support Volunteer</li>
+        <li>Programming Competitions</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: jonasbanay20@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>GitHub: github.com/username</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Jonas Banay | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
